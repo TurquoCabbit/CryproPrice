@@ -82,9 +82,9 @@ def Print_all_Analysis():
     
     os.system('cls')
     
+    print('{}\t{}'.format(Ana[Analysis_stack[0]].time.strftime('%Y/%m/%d\t%H:%M:%S'), Ana[Analysis_stack[0]].interval))
+    print('====================================================================')
     for i in Analysis_stack:
-        print('{}\t{}'.format(Ana[i].time.strftime('%Y/%m/%d\t%H:%M:%S'), Ana[i].interval))
-
         os.system('echo [93m{}'.format(Ana[i].symbol))
         os.system('echo [97m{}'.format(Ana[i].indicators['close']))
         
@@ -192,9 +192,9 @@ if len(sys.argv) == 2:
                 for i in range(Refrash_tiem):
                     print('\rWill refrash in {} seconds.                   '.format(Refrash_tiem - i), end = '')
                     sleep(1)
-                print('\rAnalysing......                   ', end = '')
+                print('\rAnalysing......                   ')
             else:
-                print('\rAnalysing......                   ', end = '')
+                print('\rAnalysing......                   ')
                 sleep(0.5)       
 
     else:
@@ -240,7 +240,7 @@ while True:
 
     elif Token == 'a' or Token == 'A':
         os.system('cls')
-        print('\rAnalysing......                   ', end = '')
+        print('\rAnalysing......                   ')
         if not Print_all_Analysis():
             os.system('pause')
 
@@ -275,7 +275,7 @@ while True:
     
     elif Token == 'r' or Token == 'R':
         os.system('cls')
-        print('\rAnalysing......                   ', end = '')
+        print('\rAnalysing......                   ')
         while True:
             if not Print_all_Analysis():
                 os.system('pause')
@@ -284,9 +284,9 @@ while True:
                 for i in range(Refrash_tiem):
                     print('\rWill refrash in {} seconds.                   '.format(Refrash_tiem - i), end = '')
                     sleep(1)
-                print('\rAnalysing......                   ', end = '')
+                print('\rAnalysing......                   ')
             else:
-                print('\rAnalysing......                   ', end = '')
+                print('\rAnalysing......                   ')
                 sleep(0.5)
     
     elif Token == 't' or Token == 'T':

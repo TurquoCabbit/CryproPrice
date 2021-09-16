@@ -1,0 +1,6 @@
+1d,15,5
+BTC
+ETH
+DOT
+SOL
+FTT

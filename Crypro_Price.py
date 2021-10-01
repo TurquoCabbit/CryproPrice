@@ -5,8 +5,8 @@ from tradingview_ta import TA_Handler, Interval, get_multiple_analysis
 from tradingview_ta.main import Exchange
 
 ########################
-Version = 'v1.4'
-Build_Date = '2021/09/15'
+Version = 'v1.5'
+Build_Date = '2021/10/01'
 ########################
 
 Handler_stack = []
@@ -187,6 +187,7 @@ if len(sys.argv) == 2:
         while True:
             if not Print_all_Analysis():
                 os.system('pause')
+                continue
 
             if Refrash_tiem != 0:
                 for i in range(Refrash_tiem):
@@ -279,6 +280,7 @@ while True:
         while True:
             if not Print_all_Analysis():
                 os.system('pause')
+                continue
 
             if Refrash_tiem != 0:
                 for i in range(Refrash_tiem):
